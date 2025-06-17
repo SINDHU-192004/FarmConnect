@@ -1,0 +1,184 @@
+/* Importing Modern Font */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #222;
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 25px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ffcc00;
+}
+
+/* Hero Section */
+header {
+    background-image: url("../Images/Website/Farmer.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 30px;
+}
+
+header h1 {
+    font-size: 64px;
+    font-weight: 600;
+    text-shadow: 3px 3px black;
+}
+
+.subtitle {
+    font-size: 28px; /* Increased for better visibility */
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: #ffcc00;
+}
+
+/* CTA Buttons */
+.button-container {
+    display: flex;
+    gap: 60px; /* Increased spacing */
+}
+
+.cta-button {
+    padding: 18px 45px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.farmer {
+    background: green;
+    color: white;
+}
+
+.buyer {
+    background: blue;
+    color: white;
+}
+
+.cta-button:hover {
+    transform: scale(1.1);
+}
+
+/* About Us Section */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 100px 20px;
+    background: white;
+}
+
+.about .content {
+    max-width: 500px;
+    text-align: left;
+}
+
+.about h2 {
+    font-size: 38px;
+    font-weight: bold;
+    color: #333;
+}
+
+.about p {
+    font-size: 18px;
+    color: #666;
+}
+
+.about .image-container img {
+    width: 450px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Features Section */
+/* Features Section */
+.features {
+    display: flex;  /* Use flexbox to align items in a row */
+    justify-content: space-between;  /* Space between items */
+    gap: 30px;  /* Increased gap between feature items */
+    padding: 80px 20px;
+    max-width: 1100px;
+    margin: auto;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.feature-item {
+    background: white;
+    padding: 25px;  /* Increased padding for a larger look */
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;  /* Allow items to grow and take up available space */
+    min-width: 250px;  /* Increased min-width for better responsiveness */
+}
+
+.feature-item img {
+    width: 100%;  /* Make image take up full width of the box */
+    height: 150px; /* Fixed height to control size */
+    object-fit: cover; /* Ensure the image fills the container and crops if needed */
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-item img:hover {
+    transform: scale(1.1);  /* Slight zoom on hover for better effect */
+}
+
+.feature-item p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+
+/* Contact Section */
+.contact {
+    background: #222;
+    color: white;
+    padding: 60px;
+}
